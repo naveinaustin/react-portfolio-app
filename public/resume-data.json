@@ -1,0 +1,264 @@
+{
+	"home": {
+		"title": "Home",
+		"name": "Navein Austin Fernandes",
+		"social": [
+		      {
+		        "name": "facebook",
+		        "url": "https://www.facebook.com/navein.fernandes/",
+		        "className": "fa fa-facebook"
+		      },
+		      {
+		        "name": "twitter",
+		        "url": "https://twitter.com/naveinaustin",
+		        "className": "fa fa-twitter"
+		      },
+		      {
+		        "name": "linkedin",
+		        "url": "https://www.linkedin.com/in/naveinaustin",
+		        "className": "fa fa-linkedin"
+		      },
+		      {
+		        "name": "instagram",
+		        "url": "https://www.instagram.com/naveinaustin/",
+		        "className": "fa fa-instagram"
+		      },
+		      {
+		        "name": "github",
+		        "url": "https://github.com/naveinaustin/",
+		        "className": "fa fa-github"
+		      }
+    	]
+	},
+	"about": {
+		"title": "About Me",
+		"photoUrl": "./images/profile-pic.jpg"
+	},
+	"resume": {
+		"title": "Resume",
+		"work": {
+			"title": "Work",
+			"companies": [
+				{
+					"name":"ellucian",
+					"location": "Bangalore, Karnataka",
+					"role": "Principal Software Developer",
+					"duration": "September 2006 - Present",
+					"description1": [
+						"Worked for several teams and products: Luminis 5, Common App Platform Team, Events Self-Service, Registration Self-Service, Student Self-Service, Student API, Australian Regulatory (TCSI, USI).",
+						" Responsibilities include discussion with BA/QA for requirements, fixing defects, end-to-end development of features/enhancements from the UI to the backend."
+					],
+					"description2": [
+						" Major contributions include a code generator that takes a JSON structure and create Java classes to assist in the development of TCSI feature.", 
+						" Internationalization and Localization support for the Islamic regions with development of the Islamic dual calendar currently being used across all Self-Service apps.",
+						" Creation of an RTL CSS generator to reduce time taken to create RTL specific CSS. Scan properties files to see which fields have not been translated.", 
+						" Upgrade Events Self-Service app by moving it from Backbone to AngularJS.",
+						" Enhancement and development of new features like add authorization, linked courses in Registration Self-Service.",
+						" Auto-Scaling and EDS changes modifications to various self-service apps."
+					]
+				},
+				{
+					"name":"eFinserve",
+					"location": "Bangalore, Karnataka",
+					"role": "Software Programmer",
+					"duration": "August 2005 - September 2006",
+					"description1": [
+						"Projects included WealthNET Web and WealthNET PT. Both products were wealth management products. ",
+						"One is a web based front end which will enable the Investor to access information on the portfolio holdings, ",
+						"analyze returns, benchmark returns, obtain scheme information etc. The other had features which included ",
+						"creating Model Portfolios for simulation; allow comparison on multiple portfolios, etc."
+					]
+				},
+				{
+					"name":"NIIT",
+					"location": "Udupi, Karnataka",
+					"role": "Faculty",
+					"duration": "May 2001 - June 2002",
+					"description": ""
+				}
+			]
+		},
+		"education": {
+			"title": "Education",
+			"schools": [
+				{
+					"degree": "MSc. (Computer Science)",
+					"collegeName": "Mangalore University Campus",
+					"location": "Mangalore, Karnataka",
+					"completion": "2004",
+					"score": "86.72%"
+				},
+				{
+					"degree": "BSc. (Physics, Chemistry, Mathematics)",
+					"collegeName": "Milagres College",
+					"location": "Udupi, Karnataka",
+					"completion": "2001",
+					"score": "78.8%"
+				}
+			]
+		}
+	},
+	"technology": {
+		"title": "Technical Forte",
+		"techList": [
+			{
+				"name": "java",
+				"image": "./images/tech/java-logo.svg",
+				"title": "Java/J2EE",
+				"description": "I started my career with Java, Servlets and JSP. I have been using Java till date which includes other forms like groovy."
+			},
+			{
+				"name": "grails",
+				"image": "./images/tech/grails-logo.png",
+				"title": "Grails",
+				"description": "Grails is an app framework that uses groovy. Worked on a number of apps that use it."
+			},
+			{
+				"name": "jquery",
+				"image": "./images/tech/jquery-logo.png",
+				"title": "jQuery/JS",
+				"description": "jQuery was the first javascript library I used and continue to use. Have extensively used it and also created components."
+			},
+			{
+				"name": "bootstrap",
+				"image": "./images/tech/bootstrap-logo.jpg",
+				"title": "Bootstrap",
+				"description": "This is the only framework I have used to create responsive web designs."
+			},
+			{
+				"name": "git",
+				"image": "./images/tech/git-logo.png",
+				"title": "Git",
+				"description": "I have used Git the most. I also have a couple of repos in GitHub."
+			},
+			{
+				"name": "spring",
+				"image": "./images/tech/spring-logo.png",
+				"title": "Spring",
+				"description": "I have been using Spring for years either directly or indirectly via Grails."
+			},
+			{
+				"name": "hibernate",
+				"image": "./images/tech/hibernate-logo.png",
+				"title": "Hibernate/JPA",
+				"description": "Started with Hibernate many years back. Most of my current experience with Hibernate is via GORM in Grails"
+			},
+			{
+				"name": "eclipse",
+				"image": "./images/tech/eclipse-logo.png",
+				"title": "Eclipse",
+				"description": "My first IDE that I used. I still use it for projects that I create in Java."
+			},
+			{
+				"name": "intellij",
+				"image": "./images/tech/intellij-logo.jpg",
+				"title": "IntelliJ",
+				"description": "Having been using this IDE for years as it has great support for Java and Grails."
+			},
+			{
+				"name": "postman",
+				"image": "./images/tech/postman-logo.png",
+				"title": "Postman",
+				"description": "Worked on projects that require consumption of REST APIs. Postman was a tool I used extensively for understanding the APIs."
+			},
+			{
+				"name": "node",
+				"image": "./images/tech/node-logo.png",
+				"title": "Node JS",
+				"description": "Created a couple of sample apps with Node."
+			},
+			{
+				"name": "react",
+				"image": "./logo192.png",
+				"title": "React",
+				"description": "Have create sample apps with React. Not worked on any real time projects using it."
+			},
+			{
+				"name": "springboot",
+				"image": "./images/tech/springboot-logo.png",
+				"title": "Spring Boot",
+				"description": "Done some tutorials on SpringBoot."
+			}
+		]
+	},
+	"certification": {
+		"title": "Certifications",
+		"certList": [
+			{
+				"name": "pmiacp",
+				"image": "./images/cert/pmi-agile-certified-practitioner-pmi-acp.png",
+				"title": "PMI-ACP",
+				"link": "https://www.credly.com/badges/34a82aa6-4780-4a71-8551-98ccf140d793"
+			},
+			{
+				"name": "csm",
+				"image": "./images/cert/seal-csm.png",
+				"title": "CSM",
+				"link": "https://bcert.me/suaaibla"
+			},
+			{
+				"name": "csd",
+				"image": "./images/cert/seal-csd.png",
+				"title": "CSD",
+				"link": "https://bcert.me/sluldbwv"
+			},
+			{
+				"name": "acsd",
+				"image": "./images/cert/badge-10712.png",
+				"title": "A-CSD",
+				"link": "https://bcert.me/suwedkndr",
+				"dimension": {
+					"height": "4.25em"
+				}
+			},
+			{
+				"name": "cspsm",
+				"image": "./images/cert/seal-cspsm.png",
+				"title": "CSP-SM",
+				"link": "https://bcert.me/scwqxglg"
+			},
+			{
+				"name": "csp",
+				"image": "./images/cert/seal-csp.png",
+				"title": "CSP",
+				"link": "https://bcert.me/swyjhbbfm"
+			},
+			{
+				"name": "scjp",
+				"image": "./images/cert/scjp-logo.png",
+				"title": "SCJP",
+				"link": "",
+				"dimension": {
+					"height": "4em",
+					"width": "6em"
+				}
+			},
+			{
+				"name": "scwcd",
+				"image": "./images/cert/scwcd-logo.png",
+				"title": "SCWCD",
+				"link": "",
+				"dimension": {
+					"height": "4em",
+					"width": "6em"
+				}
+			}
+		]
+	},
+	"volunteer": {
+		"title": "Volunteer"
+	},
+	"contact": {
+		"title": "Contact",
+		"address1": "Navein Austin Fernandes.",
+		"address2": "Bangalore, Karnataka",
+		"address3": "India",
+		"address4": "",
+		"phone": "+91 9845913875",
+		"email": "naveinaustin@gmail.com"
+	},
+	"footer": {
+		"techUsed": "Javascript, jQuery, Bootstrap, React JS, Node JS, Font Awesome",
+		"copyrightInfo": "Navein Austin Fernandes"
+	}
+}
