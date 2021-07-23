@@ -1,10 +1,6 @@
 import React, {Component} from "react";
 
 class Footer extends Component {
-	constructor(props) {
-		super(props);
-	}
-
     render() {
     	var dateObj = new Date();
 		var year = dateObj.getFullYear();	

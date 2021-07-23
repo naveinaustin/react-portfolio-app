@@ -42,7 +42,7 @@ $( document ).ready(function() {
         $sections.each(function() {
             var currentSection = $(this);
             // get the position of the section
-            var sectionTop = currentSection.offset().top;
+            var sectionTop = currentSection.offset().top - 100;
 
             // if the user has scrolled over the top of the section  
             if (scrollPosition >= sectionTop) {

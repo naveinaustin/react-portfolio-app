@@ -1,23 +1,19 @@
 import React, {Component} from "react";
 
 class About extends Component {
-	constructor(props) {
-		super(props);
-	}
-
+	
     render() {
 
     	if(this.props.data && this.props.data.photoUrl) {
-    		var photoUrl = `${process.env.PUBLIC_URL}` + "/" + this.props.data.photoUrl;
+    		var photoUrl = `${process.env.PUBLIC_URL}/${this.props.data.photoUrl}`;
     		var title = this.props.data.title;
-    		//var photoImg=<img src={photoUrl} />;
     	}
         return (
             <div className="section about-section" id="about">
             	<div className="container">
 	            	<div className="row">
 		                <div className="col-md-4 col-0">
-		                	<img className="image-style" src={photoUrl} />
+		                	<img className="image-style" src={photoUrl} alt="Navein Austin Fernandes"/>
 		                </div>
 		                <div className="col-md-8 col-12">
 		                	<h2>{title}</h2>

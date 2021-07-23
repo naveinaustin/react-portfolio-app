@@ -16,9 +16,9 @@ class Resume extends Component {
         if(this.props.data) {
             if(this.props.data.work) {
               workTitle = this.props.data.work.title;
-              work = this.props.data.work.companies.map(function(company) {
+              work = this.props.data.work.companies.map(function(company, index) {
                 return (
-                    <div className="each-section">
+                    <div className="each-section" key={index}>
                         <div className="role"><h4>{company.role}</h4></div>
                         <span className="company">{company.name}</span>
                         <span className="separator">•</span><span className="tenure">{company.duration}</span>
@@ -33,9 +33,9 @@ class Resume extends Component {
             }
             if(this.props.data.education) {
               educationTitle = this.props.data.education.title;
-              education  = this.props.data.education.schools.map(function(school) {
+              education  = this.props.data.education.schools.map(function(school, index) {
                 return (
-                    <div className="each-section">
+                    <div className="each-section" key={index}>
                         <div className="role"><h4>{school.degree}</h4></div>
                         <span className="college-name">{school.collegeName}</span>
                         <span className="separator">•</span><span className="completion">{school.completion}</span>

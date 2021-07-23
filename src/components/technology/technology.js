@@ -14,7 +14,7 @@ class Technology extends Component {
             var title = this.props.data.title;
             if(this.props.data.techList) {
                 techList=this.props.data.techList.map(function(tech) {
-                    var imgUrl = `${process.env.PUBLIC_URL}` + "/" + tech.image;
+                    var imgUrl = `${process.env.PUBLIC_URL}/${tech.image}`;
                     return <li key={tech.name}><img src={imgUrl} alt={tech.title} className="logo"/><div className="tech-title">{tech.title}</div><div>{tech.description}</div></li>
                 });
             }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import Carousel from 'react-bootstrap/Carousel';
 
 class Volunteer extends Component {
@@ -16,10 +15,10 @@ class Volunteer extends Component {
         var carouselItemList;
         if(this.props.data){
             title = this.props.data.title;
-            carouselItemList=this.props.data.carousel.map(function(item) {
+            carouselItemList=this.props.data.carousel.map(function(item, index) {
                     var imgUrl = `${process.env.PUBLIC_URL}` + item.image;
                     return (
-                        <Carousel.Item>
+                        <Carousel.Item key={index}>
                             <img className="w-50" 
                             src={imgUrl} alt={item.title} 
                             />
@@ -40,7 +39,7 @@ class Volunteer extends Component {
                                 I have been volunteering at the Technical Agility Conference(TAC) since its inception in 2018. TAC is world's first Technical Agility themed conference that his held annually at Bangalore, India.
                             </div>
                             <div>
-                                To know more about TAC2021 <a href="https://technicalagility.institute/tac2021/" target="_blank">click here</a>
+                                To know more about TAC2021 <a href="https://technicalagility.institute/tac2021/" target="_blank" rel="noreferrer">click here</a>
                             </div>
                         </div>
                      </div>
