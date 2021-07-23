@@ -41,3 +41,50 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+# Deploy Node JS app to Github Pages
+<details>
+  <summary>Click to expand!</summary>
+  
+  ## Steps:
+  ### Create a Repo and Upload Source
+- Create a git repo in github say resume.
+- Create a folder resume in your computer.
+- Copy the project content to resume directory. Make sure not to copy the .git folder.
+- Make sure the project starts
+- Push the app to github (follow the commands shared in Github or the following steps)
+    - cd resume
+    - git init (Do this for the first time to initialize a new git repo)
+    - Make sure to set username and email for git
+        - git config user.name "{name}"
+        - git config user.email {email}
+    - git remote add origin https://github.com/username/resume.git
+    - git add .
+    - git commit -m "first commit"
+    - git push origin master
+
+### Configure gh-pages
+- Run the command to install gh-pages - npm install gh-pages --save-dev
+- Open package.json and make the following changes
+    - Add a homepage property. The value would be https://username.github.io/repo_name
+    - In the existing scripts property, we need to add the predeploy and deploy script fields:
+        - "predeploy":"npm run build"
+        - "deploy":"gh-pages -d build"
+- Make sure to add and commit the files.
+- Push the changes to Github
+- When you deploy the app to your repo the repo name is added to context. So in case you are making calls to images or static files using the PUBLIC_URL you need to make sure /<repo name> is added. 
+  Example: In local development if your accessing an image http://localhost:3000/image1.png in Github pages it will be http://localhost:3000/repo_name/image1.png.
+  This needs to be changed in the app accordingly.
+       
+### Deploy the App
+- Run the command - npm run deploy
+- The command should push in changes to a branch gh-pages
+
+### Errors:
+- fatal: A branch named 'gh-pages' already exists - delete the folder: node_modules/.cache/gh-pages
+- when npm run deploy a UI opens to ask password. It was taking it wrong and not deploying the app. Do the following to solve - 
+ Create a token from your github account and clone the app using that 
+ https://token@github.com/username/repository.git
+ https://stackoverflow.com/questions/10054318/how-do-i-provide-a-username-and-password-when-running-git-clone-gitremote-git
+  
+</details>
