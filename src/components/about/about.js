@@ -8,7 +8,7 @@ class About extends Component {
     render() {
 
     	if(this.props.data && this.props.data.photoUrl) {
-    		var photoUrl = this.props.data.photoUrl;
+    		var photoUrl = `${process.env.PUBLIC_URL}` + "/" + this.props.data.photoUrl;
     		var title = this.props.data.title;
     		//var photoImg=<img src={photoUrl} />;
     	}

@@ -246,7 +246,41 @@
 		]
 	},
 	"volunteer": {
-		"title": "Volunteer"
+		"title": "Volunteer",
+		"carousel": [
+			{
+				"image": "/images/volunteer/Navein_2021.png",
+				"title": "Volunteer 2021"
+			},
+			{
+				"image": "/images/volunteer/group.jpg",
+				"title": "TAC 2019 Team"
+			},
+			{
+				"image": "/images/volunteer/ellucian1.jpeg",
+				"title": "TAC 2018 Friends"
+			},
+			{
+				"image": "/images/volunteer/gift_Copy.jpeg",
+				"title": "TAC 2019 receiving momento"
+			},
+			{
+				"image": "/images/volunteer/TAC2018_Certificate.png",
+				"title": "TAC 2018 Participation Certificate"
+			},
+			{
+				"image": "/images/volunteer/ellucian2.jpeg",
+				"title": "TAC 2019 Friends"
+			},
+			{
+				"image": "/images/volunteer/present.jpeg",
+				"title": "Introducing Speaker at TAC 2019"
+			},
+			{
+				"image": "/images/volunteer/TAC_2019_Voluteer.jpeg",
+				"title": "TAC 2019 Volunteer Momento"
+			}
+		]
 	},
 	"contact": {
 		"title": "Contact",

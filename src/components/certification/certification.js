@@ -15,14 +15,15 @@ class Certification extends Component {
             title = this.props.data.title;
             if(this.props.data.certList) {
                 certList=this.props.data.certList.map(function(cert) {
+                    var imgUrl = `${process.env.PUBLIC_URL}` + "/" + cert.image;
                     if(cert.link && cert.link !== "" && cert.dimension && cert.dimension !== "") {
                         return <li key={cert.name}><a href={cert.link} target="_blank"><img style={cert.dimension} src={cert.image} alt={cert.title} className="logo"/></a><div className="cert-title">{cert.title}</div></li>
                     } else if(cert.link && cert.link !== "") {
-                        return <li key={cert.name}><a href={cert.link} target="_blank"><img src={cert.image} alt={cert.title} className="logo"/></a><div className="cert-title">{cert.title}</div></li>
+                        return <li key={cert.name}><a href={cert.link} target="_blank"><img src={imgUrl} alt={cert.title} className="logo"/></a><div className="cert-title">{cert.title}</div></li>
                     } else if(cert.dimension && cert.dimension !== "") {
-                        return <li key={cert.name}><img style={cert.dimension} src={cert.image} alt={cert.title} className="logo"/><div className="cert-title">{cert.title}</div></li>
+                        return <li key={cert.name}><img style={cert.dimension} src={imgUrl} alt={cert.title} className="logo"/><div className="cert-title">{cert.title}</div></li>
                     }
-                    return <li key={cert.name}><img src={cert.image} alt={cert.title} className="logo"/><div className="cert-title">{cert.title}</div></li>
+                    return <li key={cert.name}><img src={imgUrl} alt={cert.title} className="logo"/><div className="cert-title">{cert.title}</div></li>
                 });
             }
         }
