@@ -1,3 +1,7 @@
+/*TODO: 
+  1) Use create a scss file for this.
+  2) Use gulp/grunt to convert scss file to css
+*/
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
 }
 
 code {
@@ -126,7 +132,6 @@ code {
 }
 
 ul.social {
-  list-style: none;
   font-size: 18px;
   color: white;
   padding: 0;
@@ -167,7 +172,6 @@ ul.social > li {
 .about-section .image-style {
   width: 150px;
   height: 150px;
-  border-radius: 5em;
 }
 
 .about-section h2 {
@@ -182,6 +186,29 @@ ul.social > li {
   color: #7a7a7a;
   text-align: justify;
   font-size: 1.25em;
+}
+
+.about-section .download-resume {
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  .about-section .download-resume {
+    text-align: center;
+  }
+}
+
+.about-section button {
+  color: #fff;
+  background-color: #1c1f23;
+  border-color: #1a1e21;
+  font-weight: bold;
+}
+
+.about-section button:hover {
+  color: #212529;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
 }
 
 /* Resume */
@@ -247,22 +274,10 @@ ul.social > li {
   font-size: 0.9em;
 }
 
-/*@media screen and (max-width: 600px) {
-  .resume-section .sub-section {
-    margin-top: 1em;
-  }
-}*/
-
 /* Technology */
 .technology-section {
   min-height: 400px;
 }
-
-/*@media screen and (max-width: 600px) {
-  .technology-section .sub-section {
-    margin-top: 1em;
-  }
-}*/
 
 ul.tech-list {
   list-style: none;
@@ -296,11 +311,6 @@ ul.tech-list > li {
   margin-top: 2em
 }
 
-/*@media screen and (max-width: 600px) {
-  .volunteer-section .sub-section {
-    margin-top: 1em;
-  }
-}*/
 
 /* Certification */
 .certification-section {
@@ -308,10 +318,6 @@ ul.tech-list > li {
 }
 
 @media screen and (max-width: 600px) {
- /* .certification-section .sub-section {
-    margin-top: 1em;
-  }
-*/
   .certification-section ul.cert-list > li {
     width: auto;
   }
@@ -349,28 +355,12 @@ ul.cert-list > li {
   color: white;
   font-size: 1.25em;
   padding-top: 2em;
-}
-
-.contact-section .form .grid-container {
-  display: inline-grid;
-  grid-template-columns: 6em 90%;
-  padding: 1em;
-  padding-top: 0;
-}
-
-.contact-section .form .grid-item {
   text-align: left;
-  padding: 1em;
 }
 
-.contact-section .contact .grid-container {
-  display: inline-grid;
-  grid-template-columns: 2em auto;
-  padding: 1em;
-}
-
-.contact-section .contact .grid-item {
+.contact-section label {
   text-align: left;
+  font-size: 16px;
 }
 
 .contact-section .required {
@@ -385,6 +375,11 @@ ul.cert-list > li {
   width: 100%;
 } 
 
+.contact-section input:focus {
+  background-color: #373233;
+  color: #eeee;
+} 
+
 .contact-section textarea {
   background-color: #373233;
   color: #eeee;
@@ -392,10 +387,16 @@ ul.cert-list > li {
   width: 100%;
 } 
 
+.contact-section textarea:focus {
+  background-color: #373233;
+  color: #eeee;
+}
+
 .contact-section button {
   color: #fff;
   background-color: #1c1f23;
   border-color: #1a1e21;
+  font-weight: bold;
 }
 
 .contact-section button:hover {
@@ -404,32 +405,18 @@ ul.cert-list > li {
   border-color: #f8f9fa;
 }
 
-@media screen and (max-width: 800px) {
-  .contact-section .form .grid-container {
-    grid-template-columns: 6em 80%;
-  }
+.contact-section .btn-section {
+  text-align: left;
+}
 
-  .contact-section .contact .grid-container {
-    grid-template-columns: 1.5em auto;
-    padding-left: 0;
+@media screen and (max-width: 600px) {
+  .contact-section .btn-section {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 600px) {
- /* .contact-section .sub-section {
-    margin-top: 1em;
-  }*/
 
-  .contact-section .form .grid-container {
-    grid-template-columns: 6em 85%;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .contact-section .form .grid-container {
-    grid-template-columns: 6em 70%;
-    padding: 0;
-  }
 }
 
 /* Footer */

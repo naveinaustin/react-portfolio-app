@@ -14,6 +14,10 @@ import React, { Component } from 'react';
 import ReactNotification from 'react-notifications-component'
 import 'react-notifications-component/dist/theme.css'
 
+/*
+TODO: Add a quote using blockquote 2.09
+*/
+
 class App extends Component {
   
   constructor(props) {
@@ -47,7 +51,7 @@ class App extends Component {
       <div className="App">
         <ReactNotification />
         <Header />
-        <div className="" style={{"paddingTop": "3.5em"}}>
+        <div className="">
           <Home data={this.state.resumeData.home}/>
           <About data={this.state.resumeData.about}/>
           <Resume data={this.state.resumeData.resume}/>

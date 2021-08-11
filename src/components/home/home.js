@@ -29,7 +29,7 @@ class Home extends Component {
                         <div className="home-info">My experience spans both frontend and backend technologies.</div>
                         <div className="home-info">Scroll down to see more details about me.</div>
                         <hr/>
-                        <ul className="social">
+                        <ul className="social list-unstyled">
                             {social}
                         </ul>
                     </div>

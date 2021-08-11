@@ -105,73 +105,75 @@ class Contact extends Component {
                 </div>
                 <div className="container contact-me">
                     <div className="row">
-                        <div className="col-md-8 col-12 form">
+                        <div className="offset-md-1 col-md-7 col-12 form">
                             <form id="contactForm" action="">
-                                <div className="grid-container"> 
-                                    <div className="grid-item">
-                                        <label htmlFor="name">Name <span className="required">*</span></label>
-                                    </div>
-                                    <div className="grid-item">
-                                        <input type="text" id="name" name="name" size="35"/>
-                                    </div>
-                                     <div className="grid-item">
-                                        <label htmlFor="email">Email <span className="required">*</span></label>
-                                    </div>
-                                    <div className="grid-item">
-                                        <input type="text" id="email" name="email" size="35"/>
-                                    </div>
-                                    <div className="grid-item">
-                                         <label htmlFor="subject">Subject</label>
-                                    </div>
-                                    <div className="grid-item">
-                                        <input type="text" id="subject" name="subject" size="35"/>
-                                    </div>
-                                    <div className="grid-item">
-                                        <label htmlFor="message">Message</label>
-                                    </div>
-                                    <div className="grid-item">
-                                        <textarea cols="35" rows="8" id="message" name="message"/>
-                                    </div>
-                                     <div className="grid-item">
-                                    </div>
-                                    <div className="grid-item">
-                                        <button id="submit" name="submit" className="btn" onClick={this.sendDetails}>Submit</button>
-                                    </div>
+                                <div className="mb-3 row">
+                                  <label htmlFor="name">Name <span className="required">*</span></label>
+                                  <div>
+                                    <input type="text" id="name" name="name" size="35" className="form-control"/>
+                                  </div>
+                                </div>
+                                <div className="mb-3 row">
+                                  <label htmlFor="email">Email <span className="required">*</span></label>
+                                  <div>
+                                    <input type="text" id="email" name="email" size="35" className="form-control"/>
+                                  </div>
+                                </div>
+                                <div className="mb-3 row">
+                                  <label htmlFor="subject">Subject</label>
+                                  <div>
+                                    <input type="text" id="subject" name="subject" size="35" className="form-control"/>
+                                  </div>
+                                </div>
+                                 <div className="mb-3 row">
+                                  <label htmlFor="message" className="col-12 col-md-2 col-form-label">Message</label>
+                                  <div>
+                                    <textarea cols="35" rows="8" id="message" name="message" className="form-control"/>
+                                  </div>
+                                </div>
+                                <div className="mb-3 row btn-section">
+                                  <div className="col-md-3 col-12">
+                                    <button id="submit" name="submit" className="btn" onClick={this.sendDetails}>Submit</button>
+                                  </div>
                                 </div>
                             </form>
                         </div>
-                        <div className="col-md-4 col-12 contact">
-                            <div className="grid-container">
-                                <div className="grid-item">
-                                    <i className="fa fa-map-marker"></i>
-                                </div>
-                                <div className="grid-item">
-                                    <div>
-                                        {address1}
-                                    </div>
-                                    <div>
-                                        {address2}
-                                    </div>
-                                    <div>
-                                        {address3}
-                                    </div>
-                                    <div>
-                                        {address4}
-                                    </div>
-                                </div>
-                                <div className="grid-item">
-                                    <i className="fa fa-phone"></i>
-                                </div>
-                                <div className="grid-item">
-                                    {phone}
-                                </div>
-                                <div className="grid-item">
-                                    <i className="fa fa-envelope"></i>
-                                </div>
-                                <div className="grid-item">
-                                    {email}
-                                </div>
+                        <div className="col-md-4 col-12 contact mb-3">
+                          <div className="row">
+                            <div className="col-1">
+                              <i className="fa fa-map-marker"></i>
                             </div>
+                            <div className="col-10">
+                              <div>
+                                {address1}
+                              </div>
+                              <div>
+                                {address2}
+                              </div>
+                              <div>
+                                {address3}
+                              </div>
+                              <div>
+                                {address4}
+                              </div>
+                            </div>
+                          </div>
+                          <div className="row ">
+                            <div className="col-1">
+                             <i className="fa fa-phone"></i>
+                            </div>
+                            <div className="col-10">
+                             <a href="tel:+919845913875">{phone}</a>
+                            </div>
+                          </div>
+                          <div className="row">
+                            <div className="col-1">
+                             <i className="fa fa-envelope"></i>
+                            </div>
+                            <div className="col-10">
+                             {email}
+                            </div>
+                          </div>
                         </div>
                     </div>  
                 </div>

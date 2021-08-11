@@ -9,6 +9,7 @@ class Technology extends Component {
     };
 
     render() {  
+        //TODO: run grunt/gulp to minimize images
         var techList;
         if(this.props.data){
             var title = this.props.data.title;

@@ -10,6 +10,7 @@ class Volunteer extends Component {
     };
 
     render() {
+        //TODO: run grunt/gulp to minimize images
         //If the value changes due to an ajax call then the following variable assignment cannot be used. You need to use this.state.
         var title="";
         var carouselItemList;

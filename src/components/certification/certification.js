@@ -12,6 +12,7 @@ class Certification extends Component {
         var certList;
         var title = "";
         if(this.props.data) {
+            //TODO: run grunt/gulp to minimize images
             title = this.props.data.title;
             if(this.props.data.certList) {
                 certList=this.props.data.certList.map(function(cert) {
