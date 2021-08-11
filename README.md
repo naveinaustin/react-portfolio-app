@@ -88,3 +88,22 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
  https://stackoverflow.com/questions/10054318/how-do-i-provide-a-username-and-password-when-running-git-clone-gitremote-git
   
 </details>
+
+
+# References
+<details>
+  <summary>Click to expand!</summary>
+  
+- https://dzone.com/articles/how-to-deploy-react-apps-for-free-with-github-page
+- https://levelup.gitconnected.com/build-an-awesome-developer-portfolio-website-using-react-667abd7bab4d
+- https://www.youtube.com/watch?v=Ej3VPf-BrYM&list=PL3KAvm6JMiowqFTXj3oPQkhP7aCgRHFTm&index=9
+- https://medium.com/technoetics/create-a-developer-portfolio-using-reactjs-d34ea1bfb18e
+- http://www.timbakerdev.com/#resume
+- https://github.com/tbakerx/react-resume-template
+- https://github.com/nordicgiant2/react-nice-resume
+- https://dzone.com/articles/how-to-deploy-react-apps-for-free-with-github-page
+- https://stackoverflow.com/questions/10054318/how-do-i-provide-a-username-and-password-when-running-git-clone-gitremote-git
+- https://www.apispreadsheets.com/
+- https://lovespreadsheets.medium.com/save-web-form-data-to-spreadsheets-880f95431f00
+- https://www.npmjs.com/package/react-notifications-component
+</details>
