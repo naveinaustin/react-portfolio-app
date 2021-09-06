@@ -25,6 +25,8 @@ class Header extends Component {
             }
         };
 
+        var imageUrl = `${process.env.PUBLIC_URL}/images/logo.png`;
+
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                 <div className="container">

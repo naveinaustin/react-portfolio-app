@@ -1,6 +1,6 @@
 /*TODO: 
   1) Use create a scss file for this.
-  2) Use gulp/grunt to convert scss file to css
+  2) Use gulp to convert scss file to css
 */
 body {
   margin: 0;
@@ -50,10 +50,9 @@ code {
 }
 
 .logo {
-    width: 5em;
-    height: 5em;
+    width: 50%;
+    height: 50%;
 }
-
 
 .navbar-collapse {
   justify-content: flex-end;
@@ -288,8 +287,30 @@ ul.tech-list {
 ul.tech-list > li {
   width: 10em;
   display: inline-block;
-  margin: 1em;
+  margin: 0.75em;
+  vertical-align: top;
 }
+
+.additional-certificates {
+  padding-top: 1em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media screen and (max-width: 800px) {
+  ul.tech-list > li {
+    width: 8em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.tech-list > li {
+    width: 7em;
+    font-size: 0.8em;
+    margin: 0.5em;
+  }
+}
+
 
 .technology-section .tech-title {
   font-weight: bold;
@@ -317,12 +338,6 @@ ul.tech-list > li {
   min-height: 400px;
 }
 
-@media screen and (max-width: 600px) {
-  .certification-section ul.cert-list > li {
-    width: auto;
-  }
-}
-
 ul.cert-list {
   list-style: none;
   font-size: 1.25em;
@@ -332,7 +347,22 @@ ul.cert-list {
 ul.cert-list > li {
   width: 10em;
   display: inline-block;
-  margin: 1em;
+  margin: 0.75em;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 800px) {
+  ul.cert-list > li {
+    width: 8em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  ul.cert-list > li {
+    width: 7em;
+    font-size: 0.8em;
+    margin: 0.5em;
+  }
 }
 
 .certification-section .cert-title {

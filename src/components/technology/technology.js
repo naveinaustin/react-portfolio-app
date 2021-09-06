@@ -24,7 +24,7 @@ class Technology extends Component {
         return (
             <div className="section technology-section" id="technology">      
                 <div className="container">
-                     <div className="row">
+                    <div className="row">
                         <div className="col-md-4 col-12">
                             <h3><span className="sub-title">{title}</span></h3>
                         </div>
@@ -32,8 +32,7 @@ class Technology extends Component {
                             I have been working on a number of technologies and tools over the years. Here listed are some of them.
                             The list also includes technologies that I am learning or have a limited knowledge off. These are listed at the bottom.
                         </div>
-                     </div>
-                    
+                    </div>
                 </div>
                 <div className="container">
                     <div className="row">
@@ -42,7 +41,12 @@ class Technology extends Component {
                         </ul>
                     </div>
                     <div style={{fontWeight:"bold"}}>** All images shown above are for depicting the technology used/learnt. No copyright infringement is intended.</div>
-                 </div>
+                </div>
+                <div className="container additional-certificates">
+                    <div className="">
+                        I have been attempting to keep myself up to date and adapt as often as possible. <a href="https://github.com/naveinaustin/documents/tree/main/certificates" target="_blank">Click Here</a> to view some of my completed courses.
+                    </div>
+                </div>
             </div>
         );
     }    
